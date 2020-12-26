@@ -1,0 +1,119 @@
+body {
+  background: radial-gradient(#7a7af5, #000020 80%);
+  background-attachment: fixed;
+}
+
+.background{
+  z-index: -1;
+}
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background: radial-gradient(#7a7af5, #000020 70%);
+}
+.circle01{
+  right: 8%;
+  top: 3vh;
+  width: 18vw;
+  z-index: -1;
+  padding-top: 18vw;
+  transform-origin: 40% 50%;
+  background: radial-gradient(#7a7af5, #000020 70%);
+  animation: rotate 50s linear infinite;
+}  
+.circle02{
+  top: calc(70vh + 12vw);
+  left: calc(45% + 12vw);
+  z-index: -1;
+  width: 12vw;
+  padding-top: 12vw;
+  background: radial-gradient(#7a7af5, #000020 70%);
+  transform-origin: 48% 48%;
+  animation: rotatePathInside 30s linear infinite;
+}
+.circle03{
+  top: 5%;
+  left: 30%;
+  z-index: -1;
+  width: 32vw;
+  height: 32vw;
+  transform-origin: 46% 50%;
+  animation: rotateBob 50s linear infinite;
+  background: radial-gradient(#7a7af5, #000020 70%);
+}
+.circle04{
+  right: 90%;
+  top: 60%;
+  width: 5vw;
+  z-index: -1;
+  padding-top: 5vw;
+  transform-origin: 40% 50%;
+  background: radial-gradient(#7a7af5, #000020 70%);
+  animation: rotateBob 92s linear infinite;
+}
+.circle05{
+  right: 60%;
+  top: 40%;
+  width: 15vw;
+  z-index: -1;
+  padding-top: 15vw;
+  transform-origin: 10% 50%;
+  background: radial-gradient(#7a7af5, #000020 70%);
+  animation: rotateBob 40s linear infinite alternate;
+}
+.circle06{
+  right: 70%;
+  top: 20%;
+  width: 35vw;
+  z-index: -1;
+  padding-top: 35vw;
+  transform-origin: 10% 90%;
+  background: radial-gradient(#7a7af5, #000020 70%);
+  animation: rotatePath 100s infinite backwards;
+}
+.circle07{
+  right: 10%;
+  top: -100%;
+  width: 45vw;
+  z-index: -1;
+  padding-top: 45vw;
+  transform-origin: 30% 70%;
+  background: radial-gradient(#7a7af5, #000020 70%);
+  animation: rotateBob 100s infinite linear;
+}
+@keyframes rotate{
+  0%{
+    transform: rotateZ(0deg);
+  }
+  100%{
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes rotatePath{
+  0%{
+    transform: rotateZ(0deg);
+  }
+  100%{
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes rotatePathInside{
+  0%{
+    transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+  }
+  100%{
+    transform: translateX(-50%) translateY(-50%) rotateZ(360deg);
+  }
+}
+@keyframes rotateBob{
+  0%{
+    transform: translateY(0) rotateZ(0deg);
+  }
+  50%{
+    transform: translateY(-3vh) rotateZ(180deg);
+  }
+  100%{
+    transform: translateY(0) rotateZ(360deg);
+  }
+}

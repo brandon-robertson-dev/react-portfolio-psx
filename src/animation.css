@@ -1,0 +1,66 @@
+.intro {
+  width: 300px;
+  height: 300px;
+  z-index: -100;
+  margin: 0 auto;
+  position: fixed;
+  background-color: rgb(177,177,180);
+  box-shadow: 0px 0px 0px 10000px rgb(177,177,180);
+  animation: introfade 5s forwards;
+  transform: scale(0.8);
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -150px;
+}
+.diamond {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(45deg, rgba(242,17,26,1) 0%, rgba(253,193,45,1) 50%, rgba(242,17,26,1) 100%);
+  transform: rotate(45deg);
+  margin: 75px auto;
+  opacity: 1;
+  animation: introfade 5s forwards;
+}
+.triangle {
+  width: 150px;
+  height: 150px;
+  transform: rotate(45deg);
+  position: absolute;
+}
+.left {
+  animation: slideup 3s forwards;
+  margin-top: -350px;
+  margin-left: 175px;
+  opacity: 0;
+  background: linear-gradient(45deg, rgba(242,17,26,1) 0%, rgba(242,17,26,1) 0%, rgba(253,193,45,1) 25%, rgba(242,17,26,0) 50%);
+}
+.right {
+  animation: slidedown 3s forwards;
+  margin-top: -250px;
+  margin-left: 175px;
+  opacity: 0;
+  background: linear-gradient(225deg, rgba(242,17,26,1) 0%, rgba(242,17,26,1) 0%, rgba(253,193,45,1) 25%, rgba(242,17,26,0) 50%);
+}
+.intro h2 {
+  color: rgb(53,64,158);
+  opacity: 1;
+  display: block;
+  animation: introfade 5s;
+}
+@keyframes slideup {
+  0% {opacity: 0; margin-top: -300px; margin-left: -25px;}
+  50% {opacity: 1;}
+  100% {opacity: 1; margin-top: -350px; margin-left: 75px;}
+}    
+@keyframes slidedown {
+  0% {opacity: 0; margin-top: -300px; margin-left: 170px;}
+  50% {opacity: 1;}
+  100% {opacity: 1; margin-top: -250px; margin-left: 75px;}
+}
+@keyframes introfade {
+  0%{opacity: 1; display: block; z-index: 100;}
+  75%{opacity: 1;}
+  99%{z-index: 100;}
+  100%{opacity: 0; display: none; z-index: -100;}
+}
