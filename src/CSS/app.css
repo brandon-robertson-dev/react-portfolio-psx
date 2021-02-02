@@ -21,14 +21,39 @@ body {
   text-align: center;
 }
 
+.React {
+  animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+/* MOBILE */
+
+.gap {
+  margin-top: 15px;
+}
+
+h2 {
+  color: var(--colour4);
+  border: 3px solid var(--colour1);
+  background: radial-gradient(var(--colour2), var(--colour3) 85%);
+  padding: 10px 25px 10px 25px;
+  display: inline-block;
+  justify-content: center;
+  margin: 5px;
+}
+
 .card {
-  background: rgba(177,177,180,0.8);
-  margin: 35px 35px;
-  padding: 20px 15px;
+  background: var(--greytransp);
+  margin: 2.5% 5%;
+  padding: 10px;
   border-radius: 25px;
 }
 
-.skills {
+.list {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -38,12 +63,21 @@ body {
   text-align: center;
 }
 
-.projects img {
-  width: 20%;
+.skills img {
+  width: 75px;
 }
-/* MOBILE */
 
+.hundoimage {
+  width: 100%;
+}
 
+.topnav img {
+  width: 80%;
+}
+
+.heading {
+  width: 30%;
+}
 
 /* TABLET */
 

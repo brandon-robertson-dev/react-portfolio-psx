@@ -2,20 +2,25 @@ body {
   background: radial-gradient(#7a7af5, #000020 80%);
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
+  height: 150vh;
 }
 
 .background{
-  position: relative;
+  position: fixed;
   z-index: -1;
+  width: 100%;
+  height: 100%;
 }
+
 .circle{
   position: absolute;
   border-radius: 50%;
   z-index: -1;
   background: radial-gradient(#7a7af5, #000020 70%);
 }
+
 .circle01{
   right: 8%;
   top: 3vh;
@@ -25,7 +30,8 @@ body {
   transform-origin: 40% 50%;
   background: radial-gradient(#7a7af5, #000020 70%);
   animation: rotate 50s linear infinite;
-}  
+}
+
 .circle02{
   top: calc(70vh + 12vw);
   left: calc(45% + 12vw);
@@ -36,6 +42,7 @@ body {
   transform-origin: 48% 48%;
   animation: rotatePathInside 30s linear infinite;
 }
+
 .circle03{
   top: 5%;
   left: 30%;
@@ -46,6 +53,7 @@ body {
   animation: rotateBob 50s linear infinite;
   background: radial-gradient(#7a7af5, #000020 70%);
 }
+
 .circle04{
   right: 90%;
   top: 60%;
@@ -56,6 +64,7 @@ body {
   background: radial-gradient(#7a7af5, #000020 70%);
   animation: rotateBob 92s linear infinite;
 }
+
 .circle05{
   right: 60%;
   top: 40%;
@@ -66,6 +75,7 @@ body {
   background: radial-gradient(#7a7af5, #000020 70%);
   animation: rotateBob 40s linear infinite alternate;
 }
+
 .circle06{
   right: 70%;
   top: 20%;
@@ -76,6 +86,7 @@ body {
   background: radial-gradient(#7a7af5, #000020 70%);
   animation: rotatePath 100s infinite backwards;
 }
+
 .circle07{
   right: 10%;
   top: -100%;
@@ -95,6 +106,7 @@ body {
     transform: rotateZ(360deg);
   }
 }
+
 @keyframes rotatePath{
   0%{
     transform: rotateZ(0deg);
@@ -103,6 +115,7 @@ body {
     transform: rotateZ(360deg);
   }
 }
+
 @keyframes rotatePathInside{
   0%{
     transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
@@ -111,6 +124,7 @@ body {
     transform: translateX(-50%) translateY(-50%) rotateZ(360deg);
   }
 }
+
 @keyframes rotateBob{
   0%{
     transform: translateY(0) rotateZ(0deg);
