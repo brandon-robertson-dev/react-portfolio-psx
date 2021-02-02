@@ -1,9 +1,13 @@
 body {
   background: radial-gradient(#7a7af5, #000020 80%);
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .background{
+  position: relative;
   z-index: -1;
 }
 .circle{
@@ -82,6 +86,7 @@ body {
   background: radial-gradient(#7a7af5, #000020 70%);
   animation: rotateBob 100s infinite linear;
 }
+
 @keyframes rotate{
   0%{
     transform: rotateZ(0deg);
