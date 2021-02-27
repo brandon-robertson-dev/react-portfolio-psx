@@ -30,6 +30,29 @@ body {
   to {transform:rotate(360deg);}
 }
 
+.topnav {
+  background-color: rgb(177, 177, 180);
+  padding: 10px 10px 10px 10px;
+}
+
+.topnav img {
+  height: 35px;
+  width: 350px;
+}
+
+.social-card {
+
+}
+
+.social-icons {
+  width: 25%;
+  margin: 0px auto;
+}
+
+.left-icon {
+  margin-right: 35px;
+}
+
 /* MOBILE */
 
 .gap {
@@ -41,9 +64,9 @@ h2 {
   border: 3px solid var(--colour1);
   background: radial-gradient(var(--colour2), var(--colour3) 85%);
   padding: 10px 25px 10px 25px;
-  display: inline-block;
   justify-content: center;
   margin: 5px;
+  margin-bottom: 15px;
 }
 
 .card {
@@ -58,35 +81,45 @@ h2 {
   grid-template-columns: 1fr 1fr;
 }
 
-.eachskill {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  text-align: center;
+.skills-list {
+  padding-top: 20px;
+}
+
+.each-item-list h2 {
+  margin: 0px 5px;
+  padding: 5px 5px;
 }
 
 .skills img {
-  width: 75px;
+  width: 30%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .hundoimage {
   width: 100%;
 }
 
-.topnav img {
-  width: 80%;
-}
-
 .heading {
   width: 30%;
 }
 
+.rounded-border {
+  border-radius: 25px;
+}
+
 /* TABLET */
 
-/* @media only screen and (min-width: 600px) {
-
-} */
+@media only screen and (min-width: 600px) {
+  .aboutme, .skills, .projects, .contact {
+    padding: 0px 15%;
+  }
+}
 
 /* DESKTOP */
 
-/* @media only screen and (min-width: 768px) {
-
-} */
+@media only screen and (min-width: 950px) {
+  .aboutme, .skills, .projects, .contact {
+    padding: 0px 30%;
+  }
+}

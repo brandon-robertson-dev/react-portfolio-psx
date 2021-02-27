@@ -16,7 +16,7 @@ let skills = [
   {name: "JavaScript", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", image: js},
   {name: "React", link: "https://reactjs.org/docs/getting-started.html", image: react},
   {name: "Ruby", link: "https://ruby-doc.org/", image: ruby},
-  {name: "Ruby on Rails", link: "https://guides.rubyonrails.org/getting_started.html", image: rails},
+  {name: "Rails", link: "https://guides.rubyonrails.org/getting_started.html", image: rails},
   {name: "MongoDB", link: "https://docs.mongodb.com/", image: mongo},
   {name: "PostgreSQL", link: "https://www.postgresql.org/docs/", image: postgres}
 ]
@@ -25,13 +25,13 @@ function Skills() {
   return (
     <div class='skills'>
       <h1>Skills</h1>
-      <div class='list card' >
+      <div class='list card skills-list' >
       {
         skills.map((eachSkill, index) => {
           return(
-            <div>
+            <div class='each-item-list'>
               <h2 key={index}>{eachSkill.name}</h2><br />
-              <a href={eachSkill.link} ><img class={eachSkill.name} src={eachSkill.image} alt={eachSkill.name} /></a>
+              <a href={eachSkill.link} target='_blank' rel="noreferrer" ><img class={eachSkill.name} src={eachSkill.image} alt={eachSkill.name} /></a>
             </div>
           )
         })

@@ -42,7 +42,7 @@
   opacity: 0;
   background: linear-gradient(225deg, rgba(242,17,26,1) 0%, rgba(242,17,26,1) 0%, rgba(253,193,45,1) 25%, rgba(242,17,26,0) 50%);
 }
-.intro h2 {
+.intro h1 {
   color: rgb(53,64,158);
   opacity: 1;
   display: block;

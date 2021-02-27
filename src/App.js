@@ -22,9 +22,9 @@ function App() {
       <Background />
       <Route exact path="/loading" component={Animation} />
       <AboutMe />
+      <Contact />
       <Skills />
       <Projects />
-      <Contact />
     </Router>
   )
 }

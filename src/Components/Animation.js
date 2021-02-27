@@ -18,7 +18,7 @@ class Animation extends Component {
         <div class="diamond"></div>
         <div class="triangle left"></div>
         <div class="triangle right"></div>
-        <h2>A Website by</h2>
+        <h1>A Website by</h1>
       </div>
     )
   }
