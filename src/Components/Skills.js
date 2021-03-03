@@ -7,6 +7,7 @@ import mongo from '../media/mongo.png'
 import postgres from '../media/postgres.png'
 import rails from '../media/rails.png'
 import react from '../media/reactlarge.png'
+import skillsIcon from '../media/skills.png'
 // import skillsIcon from '../media/skills.png'
 
 // Array for skills
@@ -24,7 +25,8 @@ let skills = [
 function Skills() {
   return (
     <div class='skills'>
-      <h1>Skills</h1>
+      <img src={skillsIcon} alt='skills' class='heading' />
+      {/* <h1>Skills</h1> */}
       <div class='list card skills-list' >
       {
         skills.map((eachSkill, index) => {

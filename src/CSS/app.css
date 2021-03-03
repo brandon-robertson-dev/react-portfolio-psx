@@ -40,17 +40,9 @@ body {
   width: 350px;
 }
 
-.social-card {
-
-}
-
 .social-icons {
   width: 25%;
   margin: 0px auto;
-}
-
-.left-icon {
-  margin-right: 35px;
 }
 
 /* MOBILE */
@@ -85,11 +77,6 @@ h2 {
   padding-top: 20px;
 }
 
-.each-item-list h2 {
-  margin: 0px 5px;
-  padding: 5px 5px;
-}
-
 .skills img {
   width: 30%;
   margin-top: 5px;
@@ -110,7 +97,7 @@ h2 {
 
 /* TABLET */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 670px) {
   .aboutme, .skills, .projects, .contact {
     padding: 0px 15%;
   }
@@ -118,7 +105,7 @@ h2 {
 
 /* DESKTOP */
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1150px) {
   .aboutme, .skills, .projects, .contact {
     padding: 0px 30%;
   }
